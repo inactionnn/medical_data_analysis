@@ -13,79 +13,27 @@ Medical Data Analysis Projects
 
 📦 medical_data_analysis/
 
+├── 📁 project_1_heart_disease/ # Пример: Анализ сердечно-сосудистых заболеваний
 
+│ ├── data/ # Сырые и обработанные данные (или ссылка на источник)
 
-├── 📁 project_1_heart_risk/                 # Анализ риска сердечно-сосудистых заболеваний
+│ ├── notebooks/ # Jupyter notebooks с исследованиями
 
-│   ├── 📁 data/
+│ ├── src/ # Вспомогательные скрипты Python
 
-│   │   └── cardiovascular_risk_dataset.csv  # Синтетические данные о здоровье сердца
+│ ├── reports/ # Отчеты, графики, презентации
 
-│   ├── 📁 notebooks/
+│ └── README.md # Описание конкретного проекта
 
-│   │   ├── 01_eda_and_cleaning.ipynb        # Разведочный анализ и очистка
+│ ├── 📁 project_2
 
-│   │   ├── 02_feature_engineering.ipynb      # Создание признаков и анализ взаимосвязей
+│ ├── 📁 project_3
 
-│   │   └── 03_modeling_and_evaluation.ipynb # Построение моделей (классификация/регрессия)
+│ ├── 📁 data/ # Общие данные (если есть)
 
-│   ├── 📁 src/                               # Вспомогательные скрипты (если понадобятся)
+├── requirements.txt # Общие зависимости
 
-│   ├── 📁 reports/                           
-
-│   │   └── figures/                          # Сохраненные графики и визуализации
-
-│   └── README.md                             # Описание проекта №1
-
-│
-├── 📁 project_2_diabetes_pima/               # Классический анализ диабета Pima Indians
-
-│   ├── 📁 data/
-
-│   │   └── diabetes.csv                       # Данные о диабете (Pima Indians)
-
-│   ├── 📁 notebooks/
-
-│   │   ├── 01_initial_analysis.ipynb          # Первичный анализ и обработка пропусков (важно!)
-
-│   │   ├── 02_handling_imbalance.ipynb        # Работа с дисбалансом классов
-
-│   │   └── 03_model_comparison.ipynb          # Сравнение моделей и выбор лучшей
-
-│   ├── 📁 src/
-
-│   ├── 📁 reports/
-
-│   └── README.md
-
-│
-├── 📁 project_3_breast_cancer_diagnostic/     # Диагностика рака молочной железы
-
-│   ├── 📁 data/
-
-│   │   └── breast_cancer_data.csv             # Данные о диагностике рака груди
-
-│   ├── 📁 notebooks/
-
-│   │   ├── 01_eda_and_visualization.ipynb     # Визуализация и анализ признаков
-
-│   │   ├── 02_feature_selection.ipynb          # Отбор наиболее важных признаков
-
-│   │   └── 03_classification_models.ipynb      # Построение классификаторов (KNN, SVM, Logistic Regression)
-
-│   ├── 📁 src/
-
-│   ├── 📁 reports/
-
-│   └── README.md
-
-│
-├── 📁 data/                                    # Общие данные (если будут)
-
-├── requirements.txt                            # Общие зависимости
-
-└── README.md                                   # Главный README файл
-
+└── README.md # Этот файл
 
 ## Список проектов
 
