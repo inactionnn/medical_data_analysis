@@ -12,31 +12,77 @@ Medical Data Analysis Projects
 Репозиторий организован по принципу "один проект — одна папка". Это позволяет изолировать зависимости и данные для каждого исследования.
 
 📦 medical_data_analysis/
+│
+├── 📁 project_1_heart_risk/                 # Анализ риска сердечно-сосудистых заболеваний
 
-├── 📁 project_1_heart_disease/       # Пример: Анализ сердечно-сосудистых заболеваний
+│   ├── 📁 data/
 
-│   ├── data/                       # Сырые и обработанные данные (или ссылка на источник)
+│   │   └── cardiovascular_risk_dataset.csv  # Синтетические данные о здоровье сердца
 
-│   ├── notebooks/                   # Jupyter notebooks с исследованиями
+│   ├── 📁 notebooks/
 
-│   ├── src/                         # Вспомогательные скрипты Python
+│   │   ├── 01_eda_and_cleaning.ipynb        # Разведочный анализ и очистка
 
-│   ├── reports/                      # Отчеты, графики, презентации
+│   │   ├── 02_feature_engineering.ipynb      # Создание признаков и анализ взаимосвязей
 
-│   └── README.md                    # Описание конкретного проекта
+│   │   └── 03_modeling_and_evaluation.ipynb # Построение моделей (классификация/регрессия)
+
+│   ├── 📁 src/                               # Вспомогательные скрипты (если понадобятся)
+
+│   ├── 📁 reports/                           
+
+│   │   └── figures/                          # Сохраненные графики и визуализации
+
+│   └── README.md                             # Описание проекта №1
 
 │
-├── 📁 project_2_diabetes_analysis/   # Пример: Анализ факторов диабета
+├── 📁 project_2_diabetes_pima/               # Классический анализ диабета Pima Indians
+
+│   ├── 📁 data/
+
+│   │   └── diabetes.csv                       # Данные о диабете (Pima Indians)
+
+│   ├── 📁 notebooks/
+
+│   │   ├── 01_initial_analysis.ipynb          # Первичный анализ и обработка пропусков (важно!)
+
+│   │   ├── 02_handling_imbalance.ipynb        # Работа с дисбалансом классов
+
+│   │   └── 03_model_comparison.ipynb          # Сравнение моделей и выбор лучшей
+
+│   ├── 📁 src/
+
+│   ├── 📁 reports/
+
+│   └── README.md
 
 │
-├── 📁 project_3_medical_cost/        # Пример: Прогнозирование стоимости лечения
+├── 📁 project_3_breast_cancer_diagnostic/     # Диагностика рака молочной железы
+
+│   ├── 📁 data/
+
+│   │   └── breast_cancer_data.csv             # Данные о диагностике рака груди
+
+│   ├── 📁 notebooks/
+
+│   │   ├── 01_eda_and_visualization.ipynb     # Визуализация и анализ признаков
+
+│   │   ├── 02_feature_selection.ipynb          # Отбор наиболее важных признаков
+
+│   │   └── 03_classification_models.ipynb      # Построение классификаторов (KNN, SVM, Logistic Regression)
+
+│   ├── 📁 src/
+
+│   ├── 📁 reports/
+
+│   └── README.md
 
 │
-├── 📁 data/                           # Общие данные (если есть)
+├── 📁 data/                                    # Общие данные (если будут)
 
-├── requirements.txt                  # Общие зависимости
+├── requirements.txt                            # Общие зависимости
 
-└── README.md                         # Этот файл
+└── README.md                                   # Главный README файл
 
 
 ## Список проектов
