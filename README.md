@@ -1,67 +1,67 @@
 # medical_data_analysis
 Medical Data Analysis Projects
 
-📌 О репозитории
+📌 About the repository
 
-Добро пожаловать в репозиторий, посвященный анализу данных в медицине и здравоохранении. 
-Здесь собраны учебные/ pet-проекты, исследования и эксперименты с реальными (или синтетическими) датасетами. 
-Основная цель — применить методы EDA, статистики и машинного обучения для решения задач в области медицины.
+Welcome to the repository dedicated to data analysis in medicine and healthcare. 
+Here you will find educational/pet projects, research and experiments with real (or synthetic) datasets. 
+The main goal is to apply EDA, statistics and machine learning methods to solve problems in the medical field.
 
-## Структура репозитория
+## Repository structure
 
-Репозиторий организован по принципу "один проект — одна папка". Это позволяет изолировать зависимости и данные для каждого исследования.
+The repository is organized according to the "one project — one folder" principle. This allows isolating dependencies and data for each study.
 
 📦 medical_data_analysis/
 
-├── 📁 project_1_heart_disease/ # Пример: Анализ сердечно-сосудистых заболеваний
+├── 📁 project_1_heart_disease/ # Example: Analysis of cardiovascular diseases
 
-│ ├── data/ # Сырые и обработанные данные (или ссылка на источник)
+│ ├── data/ # Raw and processed data (or link to source)
 
-│ ├── notebooks/ # Jupyter notebooks с исследованиями
+│ ├── notebooks/ # Jupyter notebooks with research
 
-│ ├── src/ # Вспомогательные скрипты Python
+│ ├── src/ # Auxiliary Python scripts
 
-│ ├── reports/ # Отчеты, графики, презентации
+│ ├── reports/ # Reports, graphs, presentations
 
-│ └── README.md # Описание конкретного проекта
+│ └── README.md # Description of the specific project
 
 │ ├── 📁 project_2
 
 │ ├── 📁 project_3
 
-│ ├── 📁 data/ # Общие данные (если есть)
+│ ├── 📁 data/ # Common data (if available)
 
-├── requirements.txt # Общие зависимости
+├── requirements.txt # Common dependencies
 
-└── README.md # Этот файл
+└── README.md # This file
 
-## Список проектов
+## List of projects
 
-Ниже представлен список текущих и запланированных исследований:
+Below is a list of current and planned studies:
 
-1.  **[Название проекта 1]** - 
-    *   *Статус:* В работе.
-    *   *Цель:* Определить ключевые факторы, влияющие на исход.
-2.  **[Название проекта 2]** - Краткое описание.
-    *   *Статус:* В планах.
-    *   *Цель:* Построить модель для классификации стадии заболевания.
+1.  **[Project name 1]** - 
+    *   *Status:* In progress.
+    *   *Goal:* Identify key factors influencing the outcome.
+2.  **[Project name 2]** - Brief description.
+    *   *Status:* Planned.
+    *   *Goal:* Build a model for classifying the disease stage.
 3.  *()*
 
-## Используемые технологии и инструменты
+## Technologies and tools used
 
-*   **Язык:** Python 3.8+
-*   **Анализ данных:** Pandas, NumPy, SciPy
-*   **Визуализация:** Matplotlib, Seaborn, Plotly
-*   **Машинное обучение:** Scikit-learn, XGBoost, LightGBM
-*   **Глубокое обучение:** PyTorch / TensorFlow (для специфических задач)
-*   **Статистика:** Statsmodels
-*   **Среда разработки:** Jupyter Notebook, VSCode
+*   **Language:** Python 3.8+
+*   **Data analysis:** Pandas, NumPy, SciPy
+*   **Visualization:** Matplotlib, Seaborn, Plotly
+*   **Machine learning:** Scikit-learn, XGBoost, LightGBM
+*   **Deep learning:** PyTorch / TensorFlow (for specific tasks)
+*   **Statistics:** Statsmodels
+*   **Development environment:** Jupyter Notebook, VSCode
 
-## Как начать
+## Getting started
 
-Чтобы клонировать репозиторий и установить базовые зависимости, выполните:
+To clone the repository and install basic dependencies, run:
 
 ```bash
 git clone https://github.com/inactionnn/medical_data_analysis.git
-cd название-репозитория
+cd repository-name
 pip install -r requirements.txt
