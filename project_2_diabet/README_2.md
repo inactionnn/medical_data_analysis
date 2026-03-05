@@ -12,49 +12,42 @@ The dataset contains 768 records with 8 medical predictor variables and one bina
 
 Examination of the data revealed zero values in clinically relevant columns where zero is not physiologically possible. Glucose, BloodPressure, SkinThickness, Insulin, and BMI all contained zeros that likely represent missing or unrecorded data. These values were replaced with column medians to maintain data integrity while preserving the dataset size.
 
-<img width="1200" alt="Feature Distributions Before Preprocessing" src="https://github.com/user-attachments/assets/placeholder_distributions" />
-
-*Placeholder for the distribution plots showing original feature distributions with zero values*
+<img width="1484" height="1226" alt="image" src="https://github.com/user-attachments/assets/0c748417-13d5-4802-b156-a8a89df5f4dd" />
 
 ## Target Variable Distribution
 
 The outcome variable shows moderate class imbalance. Approximately 65% of patients do not have diabetes, while 35% have diabetes. This imbalance is manageable and was addressed through stratified sampling during train-test splitting to maintain representative proportions.
 
-<img width="800" alt="Outcome Distribution" src="https://github.com/user-attachments/assets/placeholder_outcome" />
+<img width="1014" height="710" alt="image" src="https://github.com/user-attachments/assets/aec8beaa-4f8b-4020-beb5-5ab40004f24c" />
 
-*Placeholder for the count plot showing diabetes outcome distribution*
 
 ## Feature Relationships Analysis
 
 To understand how each medical measurement relates to diabetes status, I created box plots comparing feature distributions between diabetic and non-diabetic patients. Glucose shows the most dramatic separation, with diabetic patients having consistently higher levels. BMI and Age also show clear differences, with diabetic patients trending toward higher values.
 
-<img width="1500" alt="Feature Distributions by Outcome" src="https://github.com/user-attachments/assets/placeholder_boxplots" />
+<img width="1484" height="1532" alt="image" src="https://github.com/user-attachments/assets/31b15b39-3a68-4d91-b10d-c18e5d1bcf0d" />
 
-*Placeholder for the 3x3 grid of box plots showing each feature vs diabetes outcome*
 
 ## Correlation Analysis
 
 The correlation matrix reveals strongest associations with diabetes for Glucose (0.49), followed by BMI (0.29) and Age (0.24). Interestingly, Blood Pressure shows relatively weak correlation with the outcome. The diabetes pedigree function (family history) shows moderate correlation, confirming genetic factors play a role.
 
-<img width="900" alt="Correlation Matrix" src="https://github.com/user-attachments/assets/placeholder_correlation" />
+<img width="975" height="885" alt="image" src="https://github.com/user-attachments/assets/c6310950-e410-49f4-a0a4-7579e675b236" />
 
-*Placeholder for the correlation heatmap showing feature relationships*
 
 ## Key Feature Interactions
 
 The pairplot of Glucose, BMI, Age, and Insulin colored by diabetes status reveals important patterns. The glucose-BMI interaction shows clustering, with diabetic patients concentrated in regions of high glucose regardless of BMI. Age interacts with both glucose and BMI, showing older patients with elevated measurements are most likely to be diabetic.
 
-<img width="1200" alt="Pairplot of Key Features" src="https://github.com/user-attachments/assets/placeholder_pairplot" />
+<img width="1081" height="1021" alt="image" src="https://github.com/user-attachments/assets/714995fa-e8c3-4135-be1b-547584e2b8b1" />
 
-*Placeholder for the pairplot showing relationships between key features*
 
 ## Model Performance Comparison
 
 I evaluated four machine learning models: Logistic Regression, Random Forest, Gradient Boosting, and Support Vector Machine. Each model was trained on standardized features with 5-fold cross-validation. Gradient Boosting and Random Forest achieved the highest accuracies, demonstrating the value of ensemble methods for this healthcare prediction task.
 
-<img width="1000" alt="Model Accuracy Comparison" src="https://github.com/user-attachments/assets/placeholder_model_comparison" />
+<img width="1021" height="688" alt="image" src="https://github.com/user-attachments/assets/79a586ba-19df-4184-812c-09a04ed3cf35" />
 
-*Placeholder for the bar chart comparing model accuracies*
 
 ## Best Model Performance
 
@@ -62,17 +55,13 @@ For the best-performing model (Gradient Boosting), I conducted hyperparameter tu
 
 The confusion matrix shows the model correctly identifies most non-diabetic patients but has moderate success with diabetic patients, reflecting the class imbalance and inherent difficulty of the prediction task.
 
-<img width="800" alt="Confusion Matrix - Best Model" src="https://github.com/user-attachments/assets/placeholder_confusion" />
-
-*Placeholder for the confusion matrix of the best model*
 
 ## Feature Importance Analysis
 
 Random Forest feature importance reveals Glucose as the dominant predictor, accounting for nearly 40% of the model's predictive power. BMI and Age follow as the next most important features, confirming the clinical understanding that these are key diabetes risk factors. Insulin and Skin Thickness contribute least to predictions, possibly due to data quality issues or weaker direct relationships with diabetes onset.
 
-<img width="1000" alt="Feature Importance" src="https://github.com/user-attachments/assets/placeholder_importance" />
+<img width="1183" height="784" alt="image" src="https://github.com/user-attachments/assets/1990cb5c-ff52-4146-8851-e94ff038581a" />
 
-*Placeholder for the feature importance bar chart*
 
 ## Model Comparison Summary
 
@@ -94,7 +83,3 @@ Random Forest feature importance reveals Glucose as the dominant predictor, acco
 4. **Ensemble methods outperform simpler models** for this classification task, capturing complex interactions between risk factors.
 
 5. **The models achieve good but not perfect performance**, reflecting the multifactorial nature of diabetes and limitations of available measurements.
-
-## Future Directions
-
-This analysis could be extended by collecting additional data points, engineering interaction features between key variables (e.g., glucose-age interaction), or exploring deep learning approaches. External validation on different populations would also strengthen confidence in the models' generalizability.
