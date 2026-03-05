@@ -21,13 +21,15 @@ To understand how each factor relates to risk, I divided patients into four grou
 
 Age increases steadily across risk groups. Blood pressure, especially systolic, rises with risk. Cholesterol follows a similar pattern. Physical activity and daily steps decrease in high-risk patients. Stress levels increase, while sleep quality and diet quality show moderate decreases.
 
-*[Insert figure: 12 small box plots showing each numerical factor across risk quartiles]*
+<img width="1020" height="484" alt="image" src="https://github.com/user-attachments/assets/bf247614-e695-44b7-a927-1cc31ccd1c45" />
+
 
 ## Correlations
 
 The correlation matrix reveals strongest associations with age, systolic blood pressure, and cholesterol. Surprisingly, BMI shows relatively weak correlation with risk. Physical activity shows moderate negative correlation, while stress shows positive correlation.
 
-*[Insert figure: Heatmap of correlation matrix for all numerical features]*
+<img width="1226" height="1105" alt="image" src="https://github.com/user-attachments/assets/9be4eedd-0c28-4634-8438-e80576a9d0b7" />
+
 
 ## Categorical Factors
 
@@ -35,7 +37,8 @@ Smoking status shows a clear pattern. Never smokers are predominantly low risk. 
 
 Family history also predicts higher risk categories.
 
-*[Insert figure: Two stacked bar charts - one for smoking status, one for family history]*
+<img width="1584" height="1184" alt="image" src="https://github.com/user-attachments/assets/0684175c-1cfe-4169-9dd1-6eebfc7d52f3" />
+
 
 ## Regression Modeling
 
@@ -43,7 +46,8 @@ I tested several regression models to predict the numerical risk score: Linear R
 
 The predicted vs actual values plot shows points clustered near the diagonal line, indicating good model performance. Error distribution appears normal without significant bias.
 
-*[Insert figure: Scatter plot of predicted vs actual values with residual histogram]*
+<img width="1584" height="584" alt="image" src="https://github.com/user-attachments/assets/5e1ce94c-eb82-448e-8c0c-59478e94ae44" />
+
 
 ## Classification Modeling
 
@@ -51,19 +55,19 @@ For classifying patients into risk categories, I tested Logistic Regression, Ran
 
 The confusion matrix shows the model rarely confuses Low and High risk, though it sometimes misclassifies between adjacent categories.
 
-*[Insert figure: Confusion matrix for the best classification model]*
+<img width="1584" height="584" alt="image" src="https://github.com/user-attachments/assets/ad9dc29f-c687-4aa8-bf4e-ed69ed1e14cf" />
+
 
 ## Feature Importance
 
 Age emerges as the strongest predictor, followed by systolic blood pressure, cholesterol, and diastolic blood pressure. Physical activity and stress also rank highly. Smoking status appears in the top features but lower than expected, possibly because its effects are captured through other variables.
 
-*[Insert figure: Horizontal bar chart of feature importance from the best model]*
 
 ## Model Comparison
 
 For regression, Gradient Boosting outperformed other models. For classification, Random Forest achieved the highest accuracy. Linear models struggled with the complexity of the data, while tree-based methods better captured non-linear relationships.
 
-*[Insert figure: Comparison charts for regression and classification models]*
+<img width="1777" height="584" alt="image" src="https://github.com/user-attachments/assets/e2769c43-142f-4465-bcdf-1012d455cd90" />
 
 ## Key Takeaways
 
