@@ -45,6 +45,13 @@ The optimal K value was determined through cross-validation, with K=5 achieving 
 
 <img width="722" height="583" alt="image" src="https://github.com/user-attachments/assets/56d3bb19-7433-40ce-83c7-e57296f68691" />
 
+### Neural Network Performance
+
+
+A multi-layer perceptron (MLP) classifier with two hidden layers (100 and 50 neurons) was implemented using ReLU activation and Adam optimization. The network was trained with early stopping to prevent overfitting, using 10% of the training data for validation. The neural network achieved 96.49% accuracy on the test set, with precision of 0.9512 and recall of 0.9512 for malignant cases. While performing well, it was slightly outperformed by SVM and tree-based ensemble methods, likely due to the relatively small dataset size (569 samples) where complex neural architectures may not fully leverage their capacity. The training loss curve below shows smooth convergence, indicating stable learning without overfitting.
+
+<img width="1146" height="512" alt="image" src="https://github.com/user-attachments/assets/8ead56f5-e513-4e6d-a8ee-72104120d5ec" />
+
 
 ### Model Performance Comparison
 
