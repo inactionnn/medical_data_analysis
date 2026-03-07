@@ -35,17 +35,6 @@ The repository is organized according to the "one project — one folder" princi
 
 └── README.md # This file
 
-## List of projects
-
-Below is a list of current and planned studies:
-
-1.  **[Project name 1]** - 
-    *   *Status:* In progress.
-    *   *Goal:* Identify key factors influencing the outcome.
-2.  **[Project name 2]** - Brief description.
-    *   *Status:* Planned.
-    *   *Goal:* Build a model for classifying the disease stage.
-3.  *()*
 
 ## Technologies and tools used
 
