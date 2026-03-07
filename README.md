@@ -1,5 +1,4 @@
-# medical_data_analysis
-Medical Data Analysis Projects
+# Medical Data Analysis Projects
 
 📌 About the repository
 
